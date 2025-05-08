@@ -1,0 +1,35 @@
+name: iOS CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Build the App
+        run: |
+          cd cma-ios-clone-main
+          xcodebuild clean build \
+            -project CustSupportApp.xcodeproj \
+            -scheme CustSupportApp \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 14' \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Run Unit & UI Tests
+        run: |
+          cd cma-ios-clone-main
+          xcodebuild test \
+            -project CustSupportApp.xcodeproj \
+            -scheme CustSupportApp \
+            -sdk iphonesimulator \
+            -destination 'platform=iOS Simulator,name=iPhone 14' \
+            CODE_SIGNING_ALLOWED=NO
