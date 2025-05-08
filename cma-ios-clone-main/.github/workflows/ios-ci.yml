@@ -16,7 +16,6 @@ jobs:
 
       - name: Build the App
         run: |
-          cd cma-ios-clone-main
           xcodebuild clean build \
             -project CustSupportApp.xcodeproj \
             -scheme CustSupportApp \
