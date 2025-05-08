@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+        <array key="Regular_Medium.ttf">
+            <string>Regular-Medium</string>
+        </array>
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+        <array key="Regular_SemiBold.ttf">
+            <string>Regular-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Extender Offline View Controller-->
+        <scene sceneID="aNb-jv-XBR">
+            <objects>
+                <viewController storyboardIdentifier="extenderOfflineViewController" id="sMW-hF-s07" customClass="ExtenderOfflineViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAk-m1-Vzl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s get your Extender back online" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG8-0x-mMO">
+                                <rect key="frame" x="20" y="250" width="280" height="47"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HUc-Ut-n2l">
+                                <rect key="frame" x="20" y="408" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBP-0c-vwQ" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="pZd-3B-9Ml"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Let’s do it">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderOfflinePrimaryBtn:" destination="sMW-hF-s07" eventType="touchUpInside" id="yLZ-1T-cAX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s20-C7-a6r" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="zYW-0y-g1q"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="I’m no longer using this Extender">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderOfflineSecondaryBtn:" destination="sMW-hF-s07" eventType="touchUpInside" id="alk-Qm-J43"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="extender5" translatesAutoresizingMaskIntoConstraints="NO" id="WK7-bw-wOF">
+                                <rect key="frame" x="20" y="50" width="280" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WK7-bw-wOF" secondAttribute="height" multiplier="28:17" id="ZCl-w1-oUt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izF-dN-7wB">
+                                <rect key="frame" x="20" y="317" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="byl-6K-4eX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HG8-0x-mMO" firstAttribute="leading" secondItem="WK7-bw-wOF" secondAttribute="leading" id="7IL-99-I0K"/>
+                            <constraint firstItem="HG8-0x-mMO" firstAttribute="trailing" secondItem="WK7-bw-wOF" secondAttribute="trailing" id="OA3-kb-MD5"/>
+                            <constraint firstItem="byl-6K-4eX" firstAttribute="bottom" secondItem="HUc-Ut-n2l" secondAttribute="bottom" constant="30" id="VkF-qQ-WJ9"/>
+                            <constraint firstItem="izF-dN-7wB" firstAttribute="top" secondItem="HG8-0x-mMO" secondAttribute="bottom" constant="20" id="X6l-M5-0cG"/>
+                            <constraint firstItem="HUc-Ut-n2l" firstAttribute="leading" secondItem="HG8-0x-mMO" secondAttribute="leading" id="a77-gd-Fxh"/>
+                            <constraint firstItem="HG8-0x-mMO" firstAttribute="top" secondItem="WK7-bw-wOF" secondAttribute="bottom" constant="30" id="b0W-l4-Z6S"/>
+                            <constraint firstItem="izF-dN-7wB" firstAttribute="trailing" secondItem="HG8-0x-mMO" secondAttribute="trailing" id="crL-TX-liR"/>
+                            <constraint firstItem="izF-dN-7wB" firstAttribute="leading" secondItem="HG8-0x-mMO" secondAttribute="leading" id="emi-oh-2J5"/>
+                            <constraint firstItem="HUc-Ut-n2l" firstAttribute="top" relation="greaterThanOrEqual" secondItem="izF-dN-7wB" secondAttribute="bottom" constant="30" id="jFm-aF-l9J"/>
+                            <constraint firstItem="HUc-Ut-n2l" firstAttribute="trailing" secondItem="HG8-0x-mMO" secondAttribute="trailing" id="l0u-N7-kLM"/>
+                            <constraint firstItem="WK7-bw-wOF" firstAttribute="leading" secondItem="byl-6K-4eX" secondAttribute="leading" constant="20" id="pWF-df-7Kz"/>
+                            <constraint firstItem="WK7-bw-wOF" firstAttribute="top" secondItem="byl-6K-4eX" secondAttribute="top" constant="30" id="uLH-md-W2e"/>
+                            <constraint firstItem="byl-6K-4eX" firstAttribute="trailing" secondItem="WK7-bw-wOF" secondAttribute="trailing" constant="20" id="zxv-jG-iIc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yWe-jl-Rc1"/>
+                    <connections>
+                        <outlet property="extenderOfflineHeaderLbl" destination="HG8-0x-mMO" id="EgC-63-aHe"/>
+                        <outlet property="extenderOfflineImageView" destination="WK7-bw-wOF" id="9I6-WA-vVT"/>
+                        <outlet property="extenderOfflinePrimaryBtnOutlet" destination="WBP-0c-vwQ" id="nVa-hy-hzq"/>
+                        <outlet property="extenderOfflineTextLbl" destination="izF-dN-7wB" id="srV-NS-Kb3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lUa-Gm-c9i" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="62" y="8"/>
+        </scene>
+        <!--Un Plug Extender View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="unPlugExtenderViewController" id="Y6W-OH-hqX" customClass="UnPlugExtenderViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now unplug the Extender’s POWER cord from the outlet, and wait 10 seconds." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atu-lO-ktH">
+                                <rect key="frame" x="20" y="250" width="280" height="60"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2r-Ci-L5z" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="60"/>
+                                <color key="backgroundColor" name="CommonButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rcX-K2-9Do"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I’ve unplugged the POWER cord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="unPlugExtenderPrimaryBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Gxc-0H-57T"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmk-Z6-ca7" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="50" width="280" height="170"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fmk-Z6-ca7" secondAttribute="height" multiplier="28:17" id="iTQ-oa-Vin"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="atu-lO-ktH" firstAttribute="leading" secondItem="Fmk-Z6-ca7" secondAttribute="leading" id="1Ju-9T-WE3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Fmk-Z6-ca7" secondAttribute="trailing" constant="20" id="53s-Re-SpI"/>
+                            <constraint firstItem="Fmk-Z6-ca7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="30" id="6sy-10-3ak"/>
+                            <constraint firstItem="atu-lO-ktH" firstAttribute="top" secondItem="Fmk-Z6-ca7" secondAttribute="bottom" constant="30" id="8KV-VO-BCP"/>
+                            <constraint firstItem="atu-lO-ktH" firstAttribute="trailing" secondItem="Fmk-Z6-ca7" secondAttribute="trailing" id="AU2-Lf-fNW"/>
+                            <constraint firstItem="i2r-Ci-L5z" firstAttribute="leading" secondItem="atu-lO-ktH" secondAttribute="leading" id="INk-hb-3Hq"/>
+                            <constraint firstItem="i2r-Ci-L5z" firstAttribute="top" relation="greaterThanOrEqual" secondItem="atu-lO-ktH" secondAttribute="bottom" constant="30" id="Wzj-9h-gcn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="i2r-Ci-L5z" secondAttribute="bottom" constant="30" id="ZRF-DA-zll"/>
+                            <constraint firstItem="Fmk-Z6-ca7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hKd-7D-rwH"/>
+                            <constraint firstItem="i2r-Ci-L5z" firstAttribute="trailing" secondItem="atu-lO-ktH" secondAttribute="trailing" id="tk1-SB-Dbo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="cFf-6c-LTg"/>
+                    <connections>
+                        <outlet property="unPlugExtenderAnimationView" destination="Fmk-Z6-ca7" id="oPa-mZ-3C9"/>
+                        <outlet property="unPlugExtenderViewHeaderLbl" destination="atu-lO-ktH" id="eXC-Be-pI7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1530" y="15.845070422535212"/>
+        </scene>
+        <!--Plug In Extender View Controller-->
+        <scene sceneID="NMe-gc-1fW">
+            <objects>
+                <viewController storyboardIdentifier="plugInExtenderViewController" id="63g-TB-qY8" customClass="PlugInExtenderViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mjm-B8-XwU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y8s-CU-nV8" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="50" width="280" height="170"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Y8s-CU-nV8" secondAttribute="height" multiplier="28:17" id="d0v-yt-jjB"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pvg-km-suu">
+                                <rect key="frame" x="20" y="240" width="280" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now plug the Extender’s POWER cord back into an outlet" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWa-3B-SQc">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="70"/>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                        <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrF-FV-Ain" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="60"/>
+                                <color key="backgroundColor" name="CommonButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8X2-zZ-h06"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I’ve plugged it back in">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="plugInExtenderPrimaryBtn:" destination="63g-TB-qY8" eventType="touchUpInside" id="9lv-DJ-Vde"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6jD-Kc-574"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6jD-Kc-574" firstAttribute="bottom" secondItem="LrF-FV-Ain" secondAttribute="bottom" constant="30" id="JKh-AL-eIc"/>
+                            <constraint firstItem="6jD-Kc-574" firstAttribute="trailing" secondItem="LrF-FV-Ain" secondAttribute="trailing" constant="20" id="Kzz-ME-R0y"/>
+                            <constraint firstItem="6jD-Kc-574" firstAttribute="trailing" secondItem="Y8s-CU-nV8" secondAttribute="trailing" constant="20" id="N24-ck-fxr"/>
+                            <constraint firstItem="Y8s-CU-nV8" firstAttribute="top" secondItem="6jD-Kc-574" secondAttribute="top" constant="30" id="Tcj-ti-ESM"/>
+                            <constraint firstItem="LrF-FV-Ain" firstAttribute="leading" secondItem="Mjm-B8-XwU" secondAttribute="leading" constant="20" id="jM6-5t-cAm"/>
+                            <constraint firstItem="pvg-km-suu" firstAttribute="trailing" secondItem="LrF-FV-Ain" secondAttribute="trailing" id="klK-H5-CUv"/>
+                            <constraint firstItem="LrF-FV-Ain" firstAttribute="top" relation="greaterThanOrEqual" secondItem="pvg-km-suu" secondAttribute="bottom" constant="30" id="oNW-VX-N5s"/>
+                            <constraint firstItem="Y8s-CU-nV8" firstAttribute="leading" secondItem="6jD-Kc-574" secondAttribute="leading" constant="20" id="sM5-WC-8hP"/>
+                            <constraint firstItem="pvg-km-suu" firstAttribute="top" secondItem="Y8s-CU-nV8" secondAttribute="bottom" constant="20" id="t3l-js-igd"/>
+                            <constraint firstItem="pvg-km-suu" firstAttribute="leading" secondItem="LrF-FV-Ain" secondAttribute="leading" id="w9z-82-g27"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerLbl" destination="sWa-3B-SQc" id="fU7-0g-qK0"/>
+                        <outlet property="plugInExtenderAnimationView" destination="Y8s-CU-nV8" id="c2T-pu-zzH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MA0-fK-8LL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280" y="16.901408450704224"/>
+        </scene>
+        <!--Restart Timer Extender View Controller-->
+        <scene sceneID="VxZ-Vh-ugn">
+            <objects>
+                <viewController storyboardIdentifier="restartTimerExtenderViewController" id="neZ-A1-ef2" customClass="RestartTimerExtenderViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vC-r7-Kew">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxo-H3-QGW" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="30" y="94" width="260" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="__:__" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHV-KV-COA">
+                                        <rect key="frame" x="75.5" y="102" width="109.5" height="56"/>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="48"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="energyBlue"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="NHV-KV-COA" firstAttribute="centerX" secondItem="kxo-H3-QGW" secondAttribute="centerX" id="gDF-v3-BDH"/>
+                                    <constraint firstItem="NHV-KV-COA" firstAttribute="centerY" secondItem="kxo-H3-QGW" secondAttribute="centerY" id="iJh-8U-YpP"/>
+                                    <constraint firstAttribute="width" constant="260" id="mFU-Jd-8vF"/>
+                                    <constraint firstAttribute="height" constant="260" id="ykG-nL-4es"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extender restarting" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ylk-SH-cCC">
+                                <rect key="frame" x="30" y="374" width="260" height="28"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="24"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="K1S-jR-QLA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ylk-SH-cCC" firstAttribute="top" secondItem="kxo-H3-QGW" secondAttribute="bottom" constant="20" id="IKZ-hn-Gb8"/>
+                            <constraint firstItem="ylk-SH-cCC" firstAttribute="leading" secondItem="kxo-H3-QGW" secondAttribute="leading" id="aHo-j7-cU0"/>
+                            <constraint firstItem="kxo-H3-QGW" firstAttribute="centerX" secondItem="K1S-jR-QLA" secondAttribute="centerX" id="gFj-iU-lOX"/>
+                            <constraint firstItem="kxo-H3-QGW" firstAttribute="top" secondItem="K1S-jR-QLA" secondAttribute="top" constant="74" id="qbr-89-G9x"/>
+                            <constraint firstItem="ylk-SH-cCC" firstAttribute="trailing" secondItem="kxo-H3-QGW" secondAttribute="trailing" id="vbR-9g-qzk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extenderTimerBGView" destination="kxo-H3-QGW" id="lhb-Dm-Meb"/>
+                        <outlet property="extenderTimerLabel" destination="NHV-KV-COA" id="T19-XF-FTN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uY-WU-ctp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3733" y="24"/>
+        </scene>
+        <!--Extender Offline Return View Controller-->
+        <scene sceneID="K28-Dc-aIB">
+            <objects>
+                <viewController storyboardIdentifier="extenderOfflineReturnViewController" id="gXY-uW-jE4" customClass="ExtenderOfflineReturnViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kZu-cE-tY4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Just go to &quot;My orders&quot; and select the &quot;Return&quot; option for your Extender." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUk-4b-WIw">
+                                <rect key="frame" x="20" y="150" width="280" height="63"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ldx-jj-p45">
+                                <rect key="frame" x="20" y="408" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c04-Sg-cLC" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="R2V-i5-dqh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Go to “My orders”">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderReturnPrimaryBtn:" destination="gXY-uW-jE4" eventType="touchUpInside" id="bwh-7U-B3l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVN-X7-293" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="I44-hS-Ccz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Maybe later">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderReturnSecBtn:" destination="gXY-uW-jE4" eventType="touchUpInside" id="fUD-Gj-kmJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Okay, here is how to return your Extender, so we stop bugging you about it :)" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5yC-cg-Bu6">
+                                <rect key="frame" x="20" y="50" width="280" height="70"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CGC-lq-7bl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QUk-4b-WIw" firstAttribute="leading" secondItem="5yC-cg-Bu6" secondAttribute="leading" id="2bd-dX-tAW"/>
+                            <constraint firstItem="CGC-lq-7bl" firstAttribute="bottom" secondItem="ldx-jj-p45" secondAttribute="bottom" constant="30" id="AfI-UX-S04"/>
+                            <constraint firstItem="QUk-4b-WIw" firstAttribute="trailing" secondItem="5yC-cg-Bu6" secondAttribute="trailing" id="AlK-8v-cPg"/>
+                            <constraint firstItem="ldx-jj-p45" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QUk-4b-WIw" secondAttribute="bottom" constant="30" id="B2V-xB-pz6"/>
+                            <constraint firstItem="5yC-cg-Bu6" firstAttribute="top" secondItem="CGC-lq-7bl" secondAttribute="top" constant="30" id="CpU-W6-WgF"/>
+                            <constraint firstItem="QUk-4b-WIw" firstAttribute="top" secondItem="5yC-cg-Bu6" secondAttribute="bottom" constant="30" id="Enr-y2-Y39"/>
+                            <constraint firstItem="ldx-jj-p45" firstAttribute="trailing" secondItem="QUk-4b-WIw" secondAttribute="trailing" id="I4c-tg-Hks"/>
+                            <constraint firstItem="5yC-cg-Bu6" firstAttribute="leading" secondItem="CGC-lq-7bl" secondAttribute="leading" constant="20" id="M46-K4-8Yz"/>
+                            <constraint firstItem="ldx-jj-p45" firstAttribute="leading" secondItem="QUk-4b-WIw" secondAttribute="leading" id="R7G-fH-Ilo"/>
+                            <constraint firstItem="CGC-lq-7bl" firstAttribute="trailing" secondItem="5yC-cg-Bu6" secondAttribute="trailing" constant="20" id="huq-Ae-vIT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerLbl" destination="5yC-cg-Bu6" id="SEX-YT-bwk"/>
+                        <outlet property="regularLbl" destination="QUk-4b-WIw" id="Kx1-JX-HZs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdz-77-a4F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="58" y="716"/>
+        </scene>
+        <!--Extender Offline Check Lights View Controller-->
+        <scene sceneID="jHh-CP-qjO">
+            <objects>
+                <viewController storyboardIdentifier="extenderOfflineCheckLightsViewController" id="V5U-2U-Raw" customClass="ExtenderOfflineCheckLightsViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r3R-Oa-kGL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rMJ-v4-YaA" customClass="LottieAnimationView" customModule="Lottie">
+                                <rect key="frame" x="20" y="50" width="280" height="170"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rMJ-v4-YaA" secondAttribute="height" multiplier="28:17" id="cVf-j0-DB5"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let’s make sure your Extender has power" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJA-yy-eb2">
+                                <rect key="frame" x="20" y="250" width="280" height="47"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="S7h-fN-fs1">
+                                <rect key="frame" x="20" y="408" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCN-aW-kPV" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="1dk-CV-XkL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Yes, I see lights on my Extender">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderOfflineCheckLightsPrimaryBtn:" destination="V5U-2U-Raw" eventType="touchUpInside" id="kUH-m1-6LE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkn-rv-LRe" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SSl-tJ-yfS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="No, I don’t see any lights">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderOfflineCheckLightsSecondaryBtn:" destination="V5U-2U-Raw" eventType="touchUpInside" id="lhT-6W-Cil"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you see any lights on your Extender?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO3-qj-cEz">
+                                <rect key="frame" x="20" y="317" width="280" height="42"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qF6-Hm-Zc9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S7h-fN-fs1" firstAttribute="leading" secondItem="aJA-yy-eb2" secondAttribute="leading" id="B4v-2r-49n"/>
+                            <constraint firstItem="rMJ-v4-YaA" firstAttribute="leading" secondItem="qF6-Hm-Zc9" secondAttribute="leading" constant="20" id="CzR-8C-LSx"/>
+                            <constraint firstItem="qF6-Hm-Zc9" firstAttribute="bottom" secondItem="S7h-fN-fs1" secondAttribute="bottom" constant="30" id="FPU-uA-MMT"/>
+                            <constraint firstItem="aJA-yy-eb2" firstAttribute="top" secondItem="rMJ-v4-YaA" secondAttribute="bottom" constant="30" id="KJ0-sr-tSP"/>
+                            <constraint firstItem="lO3-qj-cEz" firstAttribute="top" secondItem="aJA-yy-eb2" secondAttribute="bottom" constant="20" id="M7v-9D-FOh"/>
+                            <constraint firstItem="rMJ-v4-YaA" firstAttribute="top" secondItem="qF6-Hm-Zc9" secondAttribute="top" constant="30" id="O3M-mf-rY7"/>
+                            <constraint firstItem="S7h-fN-fs1" firstAttribute="top" relation="greaterThanOrEqual" secondItem="lO3-qj-cEz" secondAttribute="bottom" constant="30" id="QC5-ju-2xw"/>
+                            <constraint firstItem="aJA-yy-eb2" firstAttribute="leading" secondItem="rMJ-v4-YaA" secondAttribute="leading" id="QL1-eQ-hcg"/>
+                            <constraint firstItem="lO3-qj-cEz" firstAttribute="trailing" secondItem="aJA-yy-eb2" secondAttribute="trailing" id="imL-LY-8UO"/>
+                            <constraint firstItem="lO3-qj-cEz" firstAttribute="leading" secondItem="aJA-yy-eb2" secondAttribute="leading" id="lMV-Bq-3sg"/>
+                            <constraint firstItem="aJA-yy-eb2" firstAttribute="trailing" secondItem="rMJ-v4-YaA" secondAttribute="trailing" id="o7y-qp-NLW"/>
+                            <constraint firstItem="qF6-Hm-Zc9" firstAttribute="trailing" secondItem="rMJ-v4-YaA" secondAttribute="trailing" constant="20" id="sJF-ic-Yzt"/>
+                            <constraint firstItem="S7h-fN-fs1" firstAttribute="trailing" secondItem="aJA-yy-eb2" secondAttribute="trailing" id="yTh-St-v7J"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extenderOfflineCheckLightsAnimationView" destination="rMJ-v4-YaA" id="LUT-FQ-Pe9"/>
+                        <outlet property="headerLbl" destination="aJA-yy-eb2" id="OfM-SS-Hcn"/>
+                        <outlet property="regularLbl" destination="lO3-qj-cEz" id="Xuk-jg-oFE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ep-jt-wAF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2985" y="22"/>
+        </scene>
+        <!--Go To Extender Offline View Controller-->
+        <scene sceneID="9DV-wW-Dde">
+            <objects>
+                <viewController storyboardIdentifier="goToExtenderOfflineViewController" id="u11-Xw-Nnt" customClass="GoToExtenderOfflineViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u1R-xt-iVs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to your Extender" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nUv-Lw-XcA">
+                                <rect key="frame" x="20" y="250" width="280" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAu-Db-xet" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                <rect key="frame" x="20" y="478" width="280" height="60"/>
+                                <color key="backgroundColor" name="CommonButtonColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="282-0j-THl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="I'm there">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goToExtenderOfflinePrimaryBtn:" destination="u11-Xw-Nnt" eventType="touchUpInside" id="xrW-mO-BB7"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="extender5" translatesAutoresizingMaskIntoConstraints="NO" id="Gbw-Nt-Tp0">
+                                <rect key="frame" x="20" y="50" width="280" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Gbw-Nt-Tp0" secondAttribute="height" multiplier="28:17" id="PSF-iS-5lk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to your Extender" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA2-vm-QXB">
+                                <rect key="frame" x="20" y="293.5" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vb5-e7-vuS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eA2-vm-QXB" firstAttribute="top" secondItem="nUv-Lw-XcA" secondAttribute="bottom" constant="20" id="0H5-jF-xuS"/>
+                            <constraint firstItem="Gbw-Nt-Tp0" firstAttribute="top" secondItem="Vb5-e7-vuS" secondAttribute="top" constant="30" id="3ol-AZ-DLH"/>
+                            <constraint firstItem="eA2-vm-QXB" firstAttribute="leading" secondItem="nUv-Lw-XcA" secondAttribute="leading" id="9hd-nd-ASO"/>
+                            <constraint firstItem="Vb5-e7-vuS" firstAttribute="bottom" secondItem="mAu-Db-xet" secondAttribute="bottom" constant="30" id="IEq-8K-gum"/>
+                            <constraint firstItem="eA2-vm-QXB" firstAttribute="trailing" secondItem="nUv-Lw-XcA" secondAttribute="trailing" id="L7o-4e-zil"/>
+                            <constraint firstItem="mAu-Db-xet" firstAttribute="trailing" secondItem="nUv-Lw-XcA" secondAttribute="trailing" id="Mbr-uA-pI1"/>
+                            <constraint firstItem="nUv-Lw-XcA" firstAttribute="leading" secondItem="Gbw-Nt-Tp0" secondAttribute="leading" id="Q6C-xh-hko"/>
+                            <constraint firstItem="nUv-Lw-XcA" firstAttribute="trailing" secondItem="Gbw-Nt-Tp0" secondAttribute="trailing" id="Sp3-WO-UfX"/>
+                            <constraint firstItem="Gbw-Nt-Tp0" firstAttribute="leading" secondItem="Vb5-e7-vuS" secondAttribute="leading" constant="20" id="fob-iE-NdL"/>
+                            <constraint firstItem="nUv-Lw-XcA" firstAttribute="top" secondItem="Gbw-Nt-Tp0" secondAttribute="bottom" constant="30" id="h1C-se-6rE"/>
+                            <constraint firstItem="Vb5-e7-vuS" firstAttribute="trailing" secondItem="Gbw-Nt-Tp0" secondAttribute="trailing" constant="20" id="uas-zD-AF1"/>
+                            <constraint firstItem="mAu-Db-xet" firstAttribute="leading" secondItem="nUv-Lw-XcA" secondAttribute="leading" id="vW0-Mo-BSH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goToExtenderOfflineHeaderLbl" destination="nUv-Lw-XcA" id="Pr2-Og-LNm"/>
+                        <outlet property="goToExtenderOfflineImageView" destination="Gbw-Nt-Tp0" id="fYb-57-p37"/>
+                        <outlet property="weakFlowTextLabel" destination="eA2-vm-QXB" id="1bV-Rj-dry"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jHo-j3-DyT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789" y="12"/>
+        </scene>
+        <!--Extender Back Online View Controller-->
+        <scene sceneID="rYm-mI-vZ4">
+            <objects>
+                <viewController storyboardIdentifier="extenderBackOnlineViewController" id="fxW-23-8hT" customClass="ExtenderBackOnlineViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7y-ea-p2V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PX4-bN-N1R">
+                                <rect key="frame" x="30" y="50" width="260" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Uf7-NS-AbJ">
+                                        <rect key="frame" x="65" y="51.5" width="130" height="157"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Extender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="hZj-BI-8EC">
+                                                <rect key="frame" x="48" y="0.0" width="34" height="40.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40.5" id="OtU-Cc-dlw"/>
+                                                    <constraint firstAttribute="width" constant="34" id="nn5-BZ-nUy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f5n-Vk-66j">
+                                                <rect key="frame" x="0.5" y="50.5" width="129.5" height="106.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My WiFi Test bnvdbfsvbfnvdsmnvbfndsvfnvd,nmmddv,m" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXR-nP-YIT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="84"/>
+                                                        <fontDescription key="fontDescription" name="Regular-Medium" family="Regular" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="S2A-aX-QKB">
+                                                        <rect key="frame" x="35" y="89" width="59" height="17.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zby-yJ-Xy4">
+                                                                <rect key="frame" x="0.0" y="4" width="10" height="10"/>
+                                                                <color key="backgroundColor" red="0.34180885550000001" green="0.72972309589999995" blue="0.41563123460000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <accessibility key="accessibilityConfiguration">
+                                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                                </accessibility>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="zby-yJ-Xy4" secondAttribute="height" id="JCU-Vw-XSy"/>
+                                                                    <constraint firstAttribute="width" constant="10" id="MCo-rB-rBM"/>
+                                                                    <constraint firstAttribute="height" constant="10" id="hcY-uy-90V"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7La-Vb-bos">
+                                                                <rect key="frame" x="16" y="0.0" width="43" height="17.5"/>
+                                                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="energyBlue"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Uf7-NS-AbJ" firstAttribute="leading" secondItem="PX4-bN-N1R" secondAttribute="leading" constant="65" id="VYV-o9-kHk"/>
+                                    <constraint firstItem="Uf7-NS-AbJ" firstAttribute="centerY" secondItem="PX4-bN-N1R" secondAttribute="centerY" id="frA-O4-dVd"/>
+                                    <constraint firstAttribute="width" constant="260" id="gCA-Z2-PTU"/>
+                                    <constraint firstItem="Uf7-NS-AbJ" firstAttribute="centerX" secondItem="PX4-bN-N1R" secondAttribute="centerX" id="gsa-MY-ZBu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uf7-NS-AbJ" secondAttribute="trailing" constant="65" id="mGu-Tt-Zoq"/>
+                                    <constraint firstAttribute="height" constant="260" id="pTu-uU-CLF"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bag-lR-ViX">
+                                <rect key="frame" x="20" y="330" width="280" height="99"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Extender now has a good signal" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXg-mD-W7b">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="47"/>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                        <color key="textColor" name="softBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did that fix your problem?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYK-Kp-ddu">
+                                        <rect key="frame" x="0.0" y="52" width="280" height="47"/>
+                                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                        <color key="textColor" name="softBlack"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="brZ-NB-F2s">
+                                <rect key="frame" x="20" y="478" width="280" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="i4c-Mc-yq9" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="zh9-sh-Dad"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Great!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderBackOnlinePrimaryBtn:" destination="fxW-23-8hT" eventType="touchUpInside" id="izj-KM-MIW"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uEp-6r-c1i" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" name="softBlack"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderBackOnlineSecBtn:" destination="fxW-23-8hT" eventType="touchUpInside" id="0Zq-aJ-AS8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sTf-Ps-m4M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PX4-bN-N1R" firstAttribute="top" secondItem="sTf-Ps-m4M" secondAttribute="top" constant="30" id="95j-bt-PEV"/>
+                            <constraint firstItem="bag-lR-ViX" firstAttribute="trailing" secondItem="brZ-NB-F2s" secondAttribute="trailing" id="M2H-tI-ha3"/>
+                            <constraint firstItem="bag-lR-ViX" firstAttribute="leading" secondItem="brZ-NB-F2s" secondAttribute="leading" id="MlM-mV-liH"/>
+                            <constraint firstAttribute="bottom" secondItem="brZ-NB-F2s" secondAttribute="bottom" constant="30" id="OM5-e0-Xbs"/>
+                            <constraint firstItem="sTf-Ps-m4M" firstAttribute="trailing" secondItem="brZ-NB-F2s" secondAttribute="trailing" constant="20" id="aL5-n4-vST"/>
+                            <constraint firstItem="brZ-NB-F2s" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bag-lR-ViX" secondAttribute="bottom" constant="30" id="d49-ho-Xgu"/>
+                            <constraint firstItem="bag-lR-ViX" firstAttribute="top" secondItem="PX4-bN-N1R" secondAttribute="bottom" constant="20" id="efH-zG-QEW"/>
+                            <constraint firstItem="PX4-bN-N1R" firstAttribute="centerX" secondItem="sTf-Ps-m4M" secondAttribute="centerX" id="sHF-da-Zx5"/>
+                            <constraint firstItem="brZ-NB-F2s" firstAttribute="leading" secondItem="sTf-Ps-m4M" secondAttribute="leading" constant="20" id="tVM-qm-ZBs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extenderBackOnlineHeaderLbl" destination="wXg-mD-W7b" id="SxH-N4-DVH"/>
+                        <outlet property="extenderBackOnlinePrimaryBtnOutlet" destination="i4c-Mc-yq9" id="0YF-Tc-H2c"/>
+                        <outlet property="extenderBackOnlineSecBtnOutlet" destination="uEp-6r-c1i" id="Q9Q-cR-Gxj"/>
+                        <outlet property="extenderBackOnlineSecLbl" destination="iYK-Kp-ddu" id="W3h-F1-Hd2"/>
+                        <outlet property="extenderBackOnlineView" destination="PX4-bN-N1R" id="DQv-2J-8O6"/>
+                        <outlet property="extenderIconImageView" destination="hZj-BI-8EC" id="y5k-B7-9UT"/>
+                        <outlet property="extenderName" destination="bXR-nP-YIT" id="dEz-IS-DbH"/>
+                        <outlet property="statusImageView" destination="zby-yJ-Xy4" id="szF-vv-L2k"/>
+                        <outlet property="statusLabel" destination="7La-Vb-bos" id="PH9-oY-zhh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZeO-6w-vRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4550.625" y="28.52112676056338"/>
+        </scene>
+        <!--Extender Offline Failed View Controller-->
+        <scene sceneID="cZY-Ff-mwO">
+            <objects>
+                <viewController storyboardIdentifier="extenderOfflineFailedViewController" id="nWa-FU-PeD" customClass="ExtenderOfflineFailedViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xqs-c3-0BT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic3-76-paB">
+                                <rect key="frame" x="30" y="50" width="260" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T9l-jK-WrN">
+                                        <rect key="frame" x="65" y="52.5" width="130" height="155"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Extender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="m4a-XH-pxL">
+                                                <rect key="frame" x="48" y="0.0" width="34" height="40.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="34" id="8Zq-Qk-yCE"/>
+                                                    <constraint firstAttribute="height" constant="40.5" id="MgZ-80-x9m"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="jcZ-BS-cil">
+                                                <rect key="frame" x="0.5" y="50.5" width="129.5" height="104.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My WiFi Test bnvdbfsvbfnvdsmnvbfndsvfnvd,nmmddv,m" textAlignment="center" lineBreakMode="middleTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do8-Zt-8cT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="129.5" height="84"/>
+                                                        <fontDescription key="fontDescription" name="Regular-Medium" family="Regular" pointSize="18"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ssB-t3-AeM">
+                                                        <rect key="frame" x="37" y="88" width="55" height="16.5"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yld-au-n6X">
+                                                                <rect key="frame" x="0.0" y="0.0" width="10.5" height="10.5"/>
+                                                                <color key="backgroundColor" red="0.95294117647058818" green="0.20784313725490194" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="10.5" id="O3b-dG-bsN"/>
+                                                                    <constraint firstAttribute="height" constant="10.5" id="bep-pn-LGM"/>
+                                                                    <constraint firstAttribute="width" secondItem="yld-au-n6X" secondAttribute="height" id="eKD-F9-zyf"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S6T-HX-cDk">
+                                                                <rect key="frame" x="14.5" y="0.0" width="40.5" height="16.5"/>
+                                                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="14"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="Midnight_Blue"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="T9l-jK-WrN" firstAttribute="leading" secondItem="ic3-76-paB" secondAttribute="leading" constant="65" id="0ia-oc-iMo"/>
+                                    <constraint firstAttribute="height" constant="260" id="2kj-Le-CrJ"/>
+                                    <constraint firstItem="T9l-jK-WrN" firstAttribute="centerY" secondItem="ic3-76-paB" secondAttribute="centerY" id="IN2-ua-JWR"/>
+                                    <constraint firstAttribute="width" constant="260" id="QCh-wO-lMb"/>
+                                    <constraint firstAttribute="trailing" secondItem="T9l-jK-WrN" secondAttribute="trailing" constant="65" id="W3Z-ir-MvI"/>
+                                    <constraint firstItem="T9l-jK-WrN" firstAttribute="centerX" secondItem="ic3-76-paB" secondAttribute="centerX" id="muf-qx-2Nz"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="130"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="We can’t connect to your Extender" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qZ-OW-QYp">
+                                <rect key="frame" x="20" y="330" width="280" height="40"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="RBh-W1-gCc">
+                                <rect key="frame" x="20" y="418" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hI-0M-tHO" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="oX1-zx-Smm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Okay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderConnectionFailedPrimaryBtn:" destination="nWa-FU-PeD" eventType="touchUpInside" id="DPF-cj-wvr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-TK-1T7" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8gE-yc-ahl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Maybe later">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderConnectionFailedSecBtn:" destination="nWa-FU-PeD" eventType="touchUpInside" id="u4G-qd-ImG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Let’s move it to a new spot" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohI-wE-vWc">
+                                <rect key="frame" x="20" y="375" width="280" height="18"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pps-ZH-EyE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ic3-76-paB" firstAttribute="centerX" secondItem="pps-ZH-EyE" secondAttribute="centerX" id="0xD-72-vZf"/>
+                            <constraint firstItem="pps-ZH-EyE" firstAttribute="trailing" secondItem="RBh-W1-gCc" secondAttribute="trailing" constant="20" id="7eF-q5-dqL"/>
+                            <constraint firstItem="pps-ZH-EyE" firstAttribute="bottom" secondItem="RBh-W1-gCc" secondAttribute="bottom" constant="20" id="D1p-zA-dq2"/>
+                            <constraint firstItem="ic3-76-paB" firstAttribute="top" secondItem="pps-ZH-EyE" secondAttribute="top" constant="30" id="DQy-I8-rol"/>
+                            <constraint firstItem="RBh-W1-gCc" firstAttribute="leading" secondItem="pps-ZH-EyE" secondAttribute="leading" constant="20" id="F48-iW-Fbl"/>
+                            <constraint firstItem="5qZ-OW-QYp" firstAttribute="leading" secondItem="RBh-W1-gCc" secondAttribute="leading" id="IuB-0G-vSY"/>
+                            <constraint firstItem="ohI-wE-vWc" firstAttribute="leading" secondItem="RBh-W1-gCc" secondAttribute="leading" id="L4F-2T-EJb"/>
+                            <constraint firstItem="RBh-W1-gCc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ohI-wE-vWc" secondAttribute="bottom" constant="25" id="MdH-eU-Xp7"/>
+                            <constraint firstItem="ohI-wE-vWc" firstAttribute="trailing" secondItem="RBh-W1-gCc" secondAttribute="trailing" id="VET-77-hLW"/>
+                            <constraint firstItem="ohI-wE-vWc" firstAttribute="top" secondItem="5qZ-OW-QYp" secondAttribute="bottom" constant="5" id="Zv3-o3-PqR"/>
+                            <constraint firstItem="5qZ-OW-QYp" firstAttribute="top" secondItem="ic3-76-paB" secondAttribute="bottom" constant="20" id="bMm-Yh-XRL"/>
+                            <constraint firstItem="5qZ-OW-QYp" firstAttribute="trailing" secondItem="RBh-W1-gCc" secondAttribute="trailing" id="j6M-6p-vKq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="extednerIconImageView" destination="m4a-XH-pxL" id="0Ik-MT-FHm"/>
+                        <outlet property="extendOfflineBottomStackView" destination="RBh-W1-gCc" id="rX1-Jt-S1I"/>
+                        <outlet property="extendOfflineTextLabel" destination="ohI-wE-vWc" id="LDH-s6-vlR"/>
+                        <outlet property="extenderNameLbl" destination="Do8-Zt-8cT" id="FYT-vZ-Qk8"/>
+                        <outlet property="statusFailedImageView" destination="yld-au-n6X" id="Oka-zD-aj0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o4g-pl-GZl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3741" y="764"/>
+        </scene>
+        <!--Extender Offline Check Lights Tips View Controller-->
+        <scene sceneID="Lxl-qw-6iz">
+            <objects>
+                <viewController storyboardIdentifier="extenderOfflineCheckLightsTipsViewController" id="914-Yz-933" customClass="ExtenderOfflineCheckLightsTipsViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOg-Ry-Gn7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Ds3-fK-OvM">
+                                <rect key="frame" x="20" y="418" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtI-Ni-xYl" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Izm-Vw-aIa"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="That worked, I see lights now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tipsPrimaryBtn:" destination="914-Yz-933" eventType="touchUpInside" id="evU-X8-D9g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rpc-aV-Ysl" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="J10-U8-fjc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="No, I still don’t see any lights">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="tipsSecondarybtn:" destination="914-Yz-933" eventType="touchUpInside" id="rKh-UN-ed4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here are somethings you can try if your Extender isn’t getting power" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3b-5C-kj9">
+                                <rect key="frame" x="20" y="50" width="280" height="70"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="n79-nA-fnY">
+                                <rect key="frame" x="20" y="150" width="280" height="208"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoLightsTableViewCell" id="uq3-KI-ACd" customClass="NoLightsTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="280" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uq3-KI-ACd" id="iWA-8y-JGs">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="914-Yz-933" id="lBy-di-bEZ"/>
+                                    <outlet property="delegate" destination="914-Yz-933" id="koG-i7-KPn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qZi-4U-rkl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="I3b-5C-kj9" firstAttribute="leading" secondItem="qZi-4U-rkl" secondAttribute="leading" constant="20" id="2EP-FE-xYr"/>
+                            <constraint firstItem="qZi-4U-rkl" firstAttribute="trailing" secondItem="Ds3-fK-OvM" secondAttribute="trailing" constant="20" id="P2T-U0-gqQ"/>
+                            <constraint firstItem="qZi-4U-rkl" firstAttribute="trailing" secondItem="n79-nA-fnY" secondAttribute="trailing" constant="20" id="W1c-70-ilJ"/>
+                            <constraint firstItem="n79-nA-fnY" firstAttribute="leading" secondItem="qZi-4U-rkl" secondAttribute="leading" constant="20" id="bSk-UC-ACn"/>
+                            <constraint firstItem="I3b-5C-kj9" firstAttribute="top" secondItem="qZi-4U-rkl" secondAttribute="top" constant="30" id="cBR-p1-Eb1"/>
+                            <constraint firstItem="qZi-4U-rkl" firstAttribute="bottom" secondItem="Ds3-fK-OvM" secondAttribute="bottom" constant="20" id="foo-tW-X5K"/>
+                            <constraint firstItem="Ds3-fK-OvM" firstAttribute="top" secondItem="n79-nA-fnY" secondAttribute="bottom" constant="60" id="iZa-V0-VIl"/>
+                            <constraint firstItem="Ds3-fK-OvM" firstAttribute="leading" secondItem="qZi-4U-rkl" secondAttribute="leading" constant="20" id="nvx-Vu-Uj2"/>
+                            <constraint firstItem="n79-nA-fnY" firstAttribute="top" secondItem="I3b-5C-kj9" secondAttribute="bottom" constant="30" id="tjE-tI-Dul"/>
+                            <constraint firstItem="qZi-4U-rkl" firstAttribute="trailing" secondItem="I3b-5C-kj9" secondAttribute="trailing" constant="20" id="yn8-rU-WWH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tipsTableView" destination="n79-nA-fnY" id="TCk-Eh-MUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYr-Ie-Kgi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2981" y="763"/>
+        </scene>
+        <!--Extender Still Weak View Controller-->
+        <scene sceneID="WHX-KZ-fcN">
+            <objects>
+                <viewController storyboardIdentifier="extenderStillWeakViewController" id="qXU-tp-8Wh" customClass="ExtenderStillWeakViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RCq-Qw-TdY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to try moving it again?" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKa-U0-ddl">
+                                <rect key="frame" x="20" y="127" width="280" height="21"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PCE-39-5Wa">
+                                <rect key="frame" x="20" y="408" width="280" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1b-lx-sgp" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="YvF-Ap-xRD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Yes, let’s move it again">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderStillWeakPrimaryBtn:" destination="qXU-tp-8Wh" eventType="touchUpInside" id="eNq-lQ-TSf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDN-h9-jyK" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="280" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="HCc-hC-XLt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-SemiBold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="No, I want to contact support">
+                                            <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="extenderStillWeakSecBtn:" destination="qXU-tp-8Wh" eventType="touchUpInside" id="k1e-Kc-1YX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Extender still has a weak signal" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUe-No-UNB">
+                                <rect key="frame" x="20" y="50" width="280" height="47"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Ng-ax-ZHh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PCE-39-5Wa" firstAttribute="leading" secondItem="cKa-U0-ddl" secondAttribute="leading" id="7Kt-nl-zda"/>
+                            <constraint firstItem="9Ng-ax-ZHh" firstAttribute="trailing" secondItem="MUe-No-UNB" secondAttribute="trailing" constant="20" id="MVf-9s-r3g"/>
+                            <constraint firstItem="cKa-U0-ddl" firstAttribute="leading" secondItem="MUe-No-UNB" secondAttribute="leading" id="R2z-hX-Kca"/>
+                            <constraint firstItem="MUe-No-UNB" firstAttribute="top" secondItem="9Ng-ax-ZHh" secondAttribute="top" constant="30" id="Wee-Bs-Y9X"/>
+                            <constraint firstItem="9Ng-ax-ZHh" firstAttribute="bottom" secondItem="PCE-39-5Wa" secondAttribute="bottom" constant="30" id="YDf-Q2-lA8"/>
+                            <constraint firstItem="cKa-U0-ddl" firstAttribute="trailing" secondItem="MUe-No-UNB" secondAttribute="trailing" id="YGE-Kx-7gN"/>
+                            <constraint firstItem="PCE-39-5Wa" firstAttribute="trailing" secondItem="cKa-U0-ddl" secondAttribute="trailing" id="djd-E0-2eN"/>
+                            <constraint firstItem="cKa-U0-ddl" firstAttribute="top" secondItem="MUe-No-UNB" secondAttribute="bottom" constant="30" id="oHW-eu-iYB"/>
+                            <constraint firstItem="PCE-39-5Wa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="cKa-U0-ddl" secondAttribute="bottom" constant="30" id="oSP-jY-dhO"/>
+                            <constraint firstItem="MUe-No-UNB" firstAttribute="leading" secondItem="9Ng-ax-ZHh" secondAttribute="leading" constant="20" id="svP-3g-vGc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="headerLbl" destination="MUe-No-UNB" id="ReB-EX-yRy"/>
+                        <outlet property="regularLbl" destination="cKa-U0-ddl" id="15z-08-3Kc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDF-Lp-LMZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4556" y="766"/>
+        </scene>
+        <!--Extender Weak Find Good Spot View Controller-->
+        <scene sceneID="pEq-UX-B5k">
+            <objects>
+                <viewController storyboardIdentifier="extenderWeakFindGoodSpotViewController" id="woY-sZ-Pc0" customClass="ExtenderWeakFindGoodSpotViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="paM-br-OoD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now let’s find a good spot, so your Extender works like it should." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAI-8n-RTP">
+                                <rect key="frame" x="20" y="103.5" width="280" height="42"/>
+                                <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0pV-0G-1Tv">
+                                <rect key="frame" x="20" y="478" width="280" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kO5-8n-ErU" customClass="RoundedButton" customModule="CustSupportApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="60"/>
+                                        <color key="backgroundColor" name="CommonButtonColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="psb-EU-50c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Okay">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="30"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="findGoodSpotForWeakExtenderBtn:" destination="woY-sZ-Pc0" eventType="touchUpInside" id="mjq-Dg-UTI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Great" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgM-qp-GHI">
+                                <rect key="frame" x="20" y="50" width="280" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="20"/>
+                                <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="X0U-5A-v7y"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pgM-qp-GHI" firstAttribute="leading" secondItem="X0U-5A-v7y" secondAttribute="leading" constant="20" id="CGu-ze-p8I"/>
+                            <constraint firstItem="0pV-0G-1Tv" firstAttribute="leading" secondItem="GAI-8n-RTP" secondAttribute="leading" id="DND-KO-Ucy"/>
+                            <constraint firstItem="0pV-0G-1Tv" firstAttribute="trailing" secondItem="GAI-8n-RTP" secondAttribute="trailing" id="Gnv-0m-jkg"/>
+                            <constraint firstItem="X0U-5A-v7y" firstAttribute="trailing" secondItem="pgM-qp-GHI" secondAttribute="trailing" constant="20" id="I01-aT-tRb"/>
+                            <constraint firstItem="0pV-0G-1Tv" firstAttribute="top" relation="greaterThanOrEqual" secondItem="GAI-8n-RTP" secondAttribute="bottom" constant="30" id="JHk-gE-HIp"/>
+                            <constraint firstItem="GAI-8n-RTP" firstAttribute="top" secondItem="pgM-qp-GHI" secondAttribute="bottom" constant="30" id="O8Q-Gt-uvP"/>
+                            <constraint firstItem="pgM-qp-GHI" firstAttribute="top" secondItem="X0U-5A-v7y" secondAttribute="top" constant="30" id="dGa-xA-x6e"/>
+                            <constraint firstItem="X0U-5A-v7y" firstAttribute="bottom" secondItem="0pV-0G-1Tv" secondAttribute="bottom" constant="30" id="juH-zA-PkA"/>
+                            <constraint firstItem="GAI-8n-RTP" firstAttribute="trailing" secondItem="pgM-qp-GHI" secondAttribute="trailing" id="vaf-m1-udf"/>
+                            <constraint firstItem="GAI-8n-RTP" firstAttribute="leading" secondItem="pgM-qp-GHI" secondAttribute="leading" id="x8G-73-OLu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="regularLbl" destination="GAI-8n-RTP" id="DEi-Uf-QAF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvK-xS-jWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528" y="739"/>
+        </scene>
+        <!--Extender TroubleshootLT Fail View Controller-->
+        <scene sceneID="rUA-Fw-4qW">
+            <objects>
+                <viewController storyboardIdentifier="extenderTroubleshootLTFailViewController" id="ahR-a6-2yP" customClass="ExtenderTroubleshootLTFailViewController" customModule="CustSupportApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4t4-Os-8Do">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EsR-j6-QMn">
+                                <rect key="frame" x="150" y="518" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="991-cv-RfJ"/>
+                                    <constraint firstAttribute="height" constant="20" id="Zcd-8o-kVp"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="closeImage">
+                                    <color key="titleColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="extenderTroubleshootCloseButton:" destination="ahR-a6-2yP" eventType="touchUpInside" id="pgP-09-gkI"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="rOT-HD-8OV">
+                                <rect key="frame" x="20" y="170" width="280" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are experiencing technical difficulties and can’t communicate with your network" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uPs-e0-xM3">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="163.5"/>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="28"/>
+                                        <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please check back later." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1j-Uu-vPu">
+                                        <rect key="frame" x="0.0" y="193.5" width="280" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="20"/>
+                                        <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hFL-mI-uti"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rOT-HD-8OV" firstAttribute="leading" secondItem="4t4-Os-8Do" secondAttribute="leading" constant="20" id="HQs-ZO-AtS"/>
+                            <constraint firstAttribute="trailing" secondItem="rOT-HD-8OV" secondAttribute="trailing" constant="20" id="TPG-cn-Odt"/>
+                            <constraint firstItem="rOT-HD-8OV" firstAttribute="top" secondItem="hFL-mI-uti" secondAttribute="top" constant="150" id="V0W-gu-071"/>
+                            <constraint firstItem="hFL-mI-uti" firstAttribute="bottom" secondItem="EsR-j6-QMn" secondAttribute="bottom" constant="30" id="mFf-Qm-NEc"/>
+                            <constraint firstItem="EsR-j6-QMn" firstAttribute="centerX" secondItem="hFL-mI-uti" secondAttribute="centerX" id="qjh-2L-nnd"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bpT-hd-5NW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5407.5" y="478.52112676056339"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Extender_icon" width="50" height="50"/>
+        <image name="closeImage" width="18" height="18"/>
+        <image name="extender5" width="335" height="170"/>
+        <namedColor name="CommonButtonColor">
+            <color red="0.96470588235294119" green="0.40000000000000002" blue="0.031372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Midnight_Blue">
+            <color red="0.0" green="0.15686274509803921" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="energyBlue">
+            <color red="0.15294117647058825" green="0.37647058823529411" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="softBlack">
+            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Optimum Gateway</key>
+	<dict>
+		<key>Cable</key>
+		<string>02_Altice One</string>
+		<key>Lights</key>
+		<string>09_Altice 1 highlight power light</string>
+	</dict>
+	<key>Optimum Fiber Gateway 5</key>
+	<dict>
+		<key>Cable</key>
+		<string></string>
+		<key>Lights</key>
+		<string>12_Fiber Gen 7 highlight power light</string>
+	</dict>
+	<key>Optimum Fiber Gateway 6</key>
+	<dict>
+		<key>Cable</key>
+		<string></string>
+		<key>Lights</key>
+		<string>13_Fiber Gen 8 highlight power light</string>
+	</dict>
+	<key>Optimum Gateway 4</key>
+	<dict>
+		<key>Cable</key>
+		<string>37_Ubee 1319-1326</string>
+		<key>Lights</key>
+		<string>10_Ubee 1319-1326 highlight power light</string>
+	</dict>
+	<key>Optimum Gateway 5</key>
+	<dict>
+		<key>Cable</key>
+		<string>05_Ubee 1322</string>
+		<key>Lights</key>
+		<string>11_Ubee 1322 highlight power light</string>
+	</dict>
+	<key>Optimum Gateway 6</key>
+	<dict>
+		<key>Cable</key>
+		<string>37_Ubee 1319-1326</string>
+		<key>Lights</key>
+		<string>10_Ubee 1319-1326 highlight power light</string>
+	</dict>
+	<key>Optimum Fiber Gateway 6 Max</key>
+	<dict>
+		<key>Cable</key>
+		<string></string>
+		<key>Lights</key>
+		<string>13_Fiber Gen 8 highlight power light</string>
+	</dict>
+	<key>Optimum Gateway 6E</key>
+	<dict>
+		<key>Cable</key>
+		<string>Gateway6E-Connect-Coax-cable</string>
+		<key>Lights</key>
+		<string>Docsis-Gateway6E-Power-Lights-ON</string>
+	</dict>
+	<key>Optimum Fiber Gateway 6E Max</key>
+	<dict>
+		<key>Cable</key>
+		<string>Gateway6E-Connect-Coax-cable</string>
+		<key>Lights</key>
+		<string>Gateway6E-Power-Lights</string>
+	</dict>
+	<key>Optimum Fiber Gateway 6E</key>
+	<dict>
+		<key>Cable</key>
+		<string>Gateway6E-Connect-Coax-cable</string>
+		<key>Lights</key>
+		<string>Gateway6E-Power-Lights</string>
+	</dict>
+</dict>
+</plist>

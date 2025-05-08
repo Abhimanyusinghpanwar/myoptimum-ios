@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "RGB_Icons_Circle_SelfInstall@1x.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "RGB_Icons_Circle_SelfInstall@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "RGB_Icons_Circle_SelfInstall@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

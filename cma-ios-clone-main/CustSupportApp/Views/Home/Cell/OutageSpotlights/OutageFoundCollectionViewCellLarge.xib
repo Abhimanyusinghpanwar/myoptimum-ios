@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OutageFoundCollectionViewCellLarge" id="gTV-IL-0wX" customClass="OutageFoundCollectionViewCellLarge" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="350" height="400"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZu-zd-hxB">
+                        <rect key="frame" x="30" y="30" width="290" height="340"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SpotLightErrorWhiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="VXa-2w-mjn">
+                                <rect key="frame" x="120" y="85" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dUB-3e-9kU"/>
+                                    <constraint firstAttribute="width" constant="50" id="yzj-YA-4va"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Btz-BA-Qaj">
+                                <rect key="frame" x="0.0" y="150" width="290" height="174"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TV outage detected" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujL-id-eFa">
+                                        <rect key="frame" x="0.0" y="0.0" width="290" height="59"/>
+                                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="We’ll let you know when we have an estimated time to fix it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMB-h1-D3l">
+                                        <rect key="frame" x="0.0" y="69" width="290" height="30"/>
+                                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="0XE-5d-6X3">
+                                        <rect key="frame" x="0.0" y="109" width="290" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiG-u2-bZd">
+                                                <rect key="frame" x="92" y="5" width="106" height="30"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="106" id="k5F-EB-c17"/>
+                                                    <constraint firstAttribute="height" constant="30" id="vor-WC-Gxu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="More info">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="outageButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="OAA-03-RaK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="YiG-u2-bZd" firstAttribute="centerX" secondItem="0XE-5d-6X3" secondAttribute="centerX" id="0Gx-hZ-hdd"/>
+                                            <constraint firstItem="YiG-u2-bZd" firstAttribute="top" secondItem="0XE-5d-6X3" secondAttribute="top" constant="5" id="MHF-4O-E7o"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VXa-2w-mjn" firstAttribute="centerX" secondItem="ZZu-zd-hxB" secondAttribute="centerX" id="I4C-2j-m94"/>
+                            <constraint firstItem="VXa-2w-mjn" firstAttribute="top" secondItem="ZZu-zd-hxB" secondAttribute="top" constant="85" id="I9R-TW-rHI"/>
+                            <constraint firstItem="Btz-BA-Qaj" firstAttribute="leading" secondItem="ZZu-zd-hxB" secondAttribute="leading" id="XtP-au-oXb"/>
+                            <constraint firstAttribute="trailing" secondItem="Btz-BA-Qaj" secondAttribute="trailing" id="dOn-2C-kOA"/>
+                            <constraint firstAttribute="bottom" secondItem="Btz-BA-Qaj" secondAttribute="bottom" constant="16" id="k3o-dl-vyD"/>
+                            <constraint firstItem="Btz-BA-Qaj" firstAttribute="top" secondItem="VXa-2w-mjn" secondAttribute="bottom" constant="15" id="oMo-vg-Bsg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" name="Midnight_Blue"/>
+            <constraints>
+                <constraint firstItem="ZZu-zd-hxB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="30" id="ELS-0k-lKF"/>
+                <constraint firstItem="ZZu-zd-hxB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="30" id="EUR-Hy-JjT"/>
+                <constraint firstAttribute="bottom" secondItem="ZZu-zd-hxB" secondAttribute="bottom" constant="30" id="dMz-zI-95b"/>
+                <constraint firstAttribute="trailing" secondItem="ZZu-zd-hxB" secondAttribute="trailing" constant="30" id="p5u-1m-eAP"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="20"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="outageActionButton" destination="YiG-u2-bZd" id="CEv-O8-wsM"/>
+                <outlet property="outageImageView" destination="VXa-2w-mjn" id="Gkf-I1-0xf"/>
+                <outlet property="outageSubTitleLabel" destination="tMB-h1-D3l" id="2AI-tX-LSH"/>
+                <outlet property="outageTitleLabel" destination="ujL-id-eFa" id="o89-j3-Wam"/>
+            </connections>
+            <point key="canvasLocation" x="-29" y="20"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="SpotLightErrorWhiteLarge" width="42" height="42"/>
+        <namedColor name="Midnight_Blue">
+            <color red="0.0" green="0.15686274509803921" blue="0.39215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

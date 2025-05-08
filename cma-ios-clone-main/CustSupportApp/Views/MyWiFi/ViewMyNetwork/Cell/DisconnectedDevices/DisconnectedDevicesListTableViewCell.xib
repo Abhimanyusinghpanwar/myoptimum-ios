@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Medium.ttf">
+            <string>Regular-Medium</string>
+        </array>
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DisconnectedDevices" rowHeight="80" id="KGk-i7-Jjw" customClass="DisconnectedDevicesListTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="402" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="402" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unknown_gray_static" translatesAutoresizingMaskIntoConstraints="NO" id="Ubo-Kb-zwZ">
+                        <rect key="frame" x="30" y="13" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="xjC-2o-IvG"/>
+                            <constraint firstAttribute="width" constant="50" id="yhK-d9-st7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="LQM5678UHGytN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Los-v5-gWB">
+                        <rect key="frame" x="107" y="20" width="275" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2Ty-h0-wL1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Regular-Medium" family="Regular" pointSize="18"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnected at 10:22 AM today" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8a-4Q-Ben">
+                        <rect key="frame" x="107" y="45" width="275" height="14"/>
+                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0o2-pI-n6d">
+                        <rect key="frame" x="107" y="79" width="260" height="1"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineSeparation" translatesAutoresizingMaskIntoConstraints="NO" id="zxU-yy-xOh">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="1"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zxU-yy-xOh" secondAttribute="bottom" id="Ibd-Mf-6dn"/>
+                            <constraint firstItem="zxU-yy-xOh" firstAttribute="top" secondItem="0o2-pI-n6d" secondAttribute="top" id="NIZ-M2-dKi"/>
+                            <constraint firstAttribute="height" constant="1" id="WWH-9t-f10"/>
+                            <constraint firstAttribute="trailing" secondItem="zxU-yy-xOh" secondAttribute="trailing" id="cCh-wi-j0d"/>
+                            <constraint firstItem="zxU-yy-xOh" firstAttribute="leading" secondItem="0o2-pI-n6d" secondAttribute="leading" id="oEn-Jl-Qu0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="0o2-pI-n6d" secondAttribute="bottom" id="5gA-fZ-AaW"/>
+                    <constraint firstAttribute="trailing" secondItem="Los-v5-gWB" secondAttribute="trailing" constant="20" symbolic="YES" id="8eJ-GG-vxl"/>
+                    <constraint firstItem="Los-v5-gWB" firstAttribute="leading" secondItem="Ubo-Kb-zwZ" secondAttribute="trailing" constant="27" id="IsN-v8-XXG"/>
+                    <constraint firstItem="Ubo-Kb-zwZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="JUa-2Z-G5Y"/>
+                    <constraint firstItem="0o2-pI-n6d" firstAttribute="leading" secondItem="V8a-4Q-Ben" secondAttribute="leading" id="Nh6-aN-mfF"/>
+                    <constraint firstAttribute="trailing" secondItem="V8a-4Q-Ben" secondAttribute="trailing" constant="20" id="Uhg-ok-F1J"/>
+                    <constraint firstItem="V8a-4Q-Ben" firstAttribute="top" secondItem="Los-v5-gWB" secondAttribute="bottom" constant="5" id="Wex-ki-yfK"/>
+                    <constraint firstAttribute="trailing" secondItem="0o2-pI-n6d" secondAttribute="trailing" constant="35" id="XBK-S4-bS1"/>
+                    <constraint firstItem="0o2-pI-n6d" firstAttribute="top" secondItem="V8a-4Q-Ben" secondAttribute="bottom" constant="20" id="beU-3x-xaz"/>
+                    <constraint firstItem="Los-v5-gWB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="dHs-vH-9q0"/>
+                    <constraint firstItem="V8a-4Q-Ben" firstAttribute="leading" secondItem="Los-v5-gWB" secondAttribute="leading" id="nju-Tt-rad"/>
+                    <constraint firstItem="Ubo-Kb-zwZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="zNO-Fq-oqB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomViewLeading" destination="Nh6-aN-mfF" id="sAU-h0-EC1"/>
+                <outlet property="bottomViewTopConstraint" destination="beU-3x-xaz" id="m8U-4k-Ml6"/>
+                <outlet property="bottomview" destination="0o2-pI-n6d" id="06U-Mt-hqW"/>
+                <outlet property="dateLabel" destination="V8a-4Q-Ben" id="ogk-cp-H6v"/>
+                <outlet property="deviceNameLabel" destination="Los-v5-gWB" id="kFV-f3-4Wb"/>
+                <outlet property="iconView" destination="Ubo-Kb-zwZ" id="WLM-7I-Icz"/>
+            </connections>
+            <point key="canvasLocation" x="6.1068702290076331" y="31.338028169014088"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lineSeparation" width="332" height="1"/>
+        <image name="unknown_gray_static" width="22" height="27"/>
+    </resources>
+</document>

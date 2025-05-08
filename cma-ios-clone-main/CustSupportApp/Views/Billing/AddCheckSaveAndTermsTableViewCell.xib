@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCheckSaveAndTermsTableViewCell" id="KGk-i7-Jjw" customClass="AddCheckSaveAndTermsTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="103"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="103"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3X6-TB-zhV">
+                        <rect key="frame" x="0.0" y="30" width="335" height="73"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdV-td-u7s">
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="tncCheckBoxACH"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="KzG-Bz-f5X"/>
+                                    <constraint firstAttribute="height" constant="24" id="Xtg-d7-Af3"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="unselected-check"/>
+                                <state key="disabled" image="unselected-check">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read and agree to the Pay Bill Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m87-7M-oj7" userLabel="Tappable Label">
+                                <rect key="frame" x="32" y="0.0" width="303" height="42"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please read and agree to the Terms and Conditions" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUX-WT-epK" userLabel="Error Terms">
+                                <rect key="frame" x="32" y="52" width="310.66666666666669" height="37.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m87-7M-oj7" firstAttribute="leading" secondItem="hdV-td-u7s" secondAttribute="trailing" constant="8" id="0ap-4Q-ZuR"/>
+                            <constraint firstAttribute="trailing" secondItem="cUX-WT-epK" secondAttribute="trailing" constant="-7.6666666666666856" id="4Kn-1i-L0d"/>
+                            <constraint firstItem="cUX-WT-epK" firstAttribute="leading" secondItem="m87-7M-oj7" secondAttribute="leading" id="Neg-qx-Aaa"/>
+                            <constraint firstAttribute="trailing" secondItem="m87-7M-oj7" secondAttribute="trailing" id="Rl7-0G-tqW"/>
+                            <constraint firstItem="m87-7M-oj7" firstAttribute="top" secondItem="3X6-TB-zhV" secondAttribute="top" id="X46-6f-pAY"/>
+                            <constraint firstItem="hdV-td-u7s" firstAttribute="leading" secondItem="3X6-TB-zhV" secondAttribute="leading" id="YQt-bi-tC8"/>
+                            <constraint firstItem="cUX-WT-epK" firstAttribute="top" secondItem="m87-7M-oj7" secondAttribute="bottom" constant="10" id="bs9-k2-33W"/>
+                            <constraint firstItem="hdV-td-u7s" firstAttribute="top" secondItem="3X6-TB-zhV" secondAttribute="top" id="w01-xd-dxa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="3X6-TB-zhV" secondAttribute="bottom" id="Jv5-jW-jjQ"/>
+                    <constraint firstItem="3X6-TB-zhV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="NlR-ne-E0T"/>
+                    <constraint firstItem="3X6-TB-zhV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Z4A-g3-Qfx"/>
+                    <constraint firstAttribute="trailing" secondItem="3X6-TB-zhV" secondAttribute="trailing" id="ya8-XA-DK1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnTermsConditionCheckBox" destination="hdV-td-u7s" id="ryD-ul-w1v"/>
+                <outlet property="lblErrorMsg" destination="cUX-WT-epK" id="Zzf-DL-pv5"/>
+                <outlet property="lblTermsAndCond" destination="m87-7M-oj7" id="k9Q-HI-jFL"/>
+                <outlet property="termsView" destination="3X6-TB-zhV" id="ZGO-hR-zmV"/>
+            </connections>
+            <point key="canvasLocation" x="-54.198473282442748" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="unselected-check" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

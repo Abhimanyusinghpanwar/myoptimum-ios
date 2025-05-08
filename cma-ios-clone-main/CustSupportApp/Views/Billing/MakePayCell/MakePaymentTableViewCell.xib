@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+        <array key="Regular_Medium.ttf">
+            <string>Regular-Medium</string>
+        </array>
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MakePaymentTableViewCell" id="KGk-i7-Jjw" customClass="MakePaymentTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="113"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="333" height="113"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7h-2I-GaP">
+                        <rect key="frame" x="0.0" y="0.0" width="295" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="gjD-KX-L8h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Regular-Medium" family="Regular" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$175.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhL-oE-Yur">
+                        <rect key="frame" x="0.0" y="31" width="293" height="42"/>
+                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="42"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-Cf-SN3">
+                        <rect key="frame" x="293" y="31" width="40" height="42"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="16Z-8f-xNt"/>
+                            <constraint firstAttribute="height" constant="42" id="1Zy-hK-oRF"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="edit_blue_icon"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount due is $250.00,  includes $125.00 past due" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9x0-Uj-e5X">
+                        <rect key="frame" x="0.0" y="70" width="293" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Bhm-4F-JSb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="d7h-2I-GaP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AzF-9M-Tgx"/>
+                    <constraint firstItem="9x0-Uj-e5X" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="G6d-s1-WUI"/>
+                    <constraint firstItem="bhL-oE-Yur" firstAttribute="trailing" secondItem="9x0-Uj-e5X" secondAttribute="trailing" id="HXB-Og-KAq"/>
+                    <constraint firstItem="bhL-oE-Yur" firstAttribute="top" secondItem="d7h-2I-GaP" secondAttribute="bottom" constant="5" id="Hbk-7w-22h"/>
+                    <constraint firstItem="d7h-2I-GaP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="R5p-Wa-6aX"/>
+                    <constraint firstItem="9x0-Uj-e5X" firstAttribute="top" secondItem="bhL-oE-Yur" secondAttribute="bottom" constant="-3" id="VHw-zG-Nah"/>
+                    <constraint firstItem="bhL-oE-Yur" firstAttribute="leading" secondItem="d7h-2I-GaP" secondAttribute="leading" id="bnh-e7-hKx"/>
+                    <constraint firstItem="jNE-Cf-SN3" firstAttribute="leading" secondItem="bhL-oE-Yur" secondAttribute="trailing" id="goU-oD-x8e"/>
+                    <constraint firstItem="jNE-Cf-SN3" firstAttribute="bottom" secondItem="bhL-oE-Yur" secondAttribute="bottom" id="r1p-z3-JfZ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jNE-Cf-SN3" secondAttribute="trailing" constant="-20" id="txp-dT-LtD"/>
+                    <constraint firstAttribute="trailing" secondItem="d7h-2I-GaP" secondAttribute="trailing" constant="38" id="uaS-z5-Fc5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="editBtn" destination="jNE-Cf-SN3" id="QCy-1y-06U"/>
+                <outlet property="lblAmount" destination="d7h-2I-GaP" id="j12-GU-gjZ"/>
+                <outlet property="lblAmountDue" destination="9x0-Uj-e5X" id="6z8-Wd-MuS"/>
+                <outlet property="lblPriceVal" destination="bhL-oE-Yur" id="fyW-xx-C2v"/>
+            </connections>
+            <point key="canvasLocation" x="-254" y="-46"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="edit_blue_icon" width="40" height="40"/>
+    </resources>
+</document>

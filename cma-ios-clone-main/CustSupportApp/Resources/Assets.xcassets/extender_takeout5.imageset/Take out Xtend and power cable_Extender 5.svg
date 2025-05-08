@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 335 170" style="enable-background:new 0 0 335 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#989696;stroke-width:1.5;stroke-linecap:round;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#989696;stroke-width:1.5;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#272727;stroke-width:1.5;stroke-miterlimit:10;}
+</style>
+<line id="Line_98" class="st0" x1="0" y1="159.5" x2="335" y2="159.5"/>
+<g>
+	<g>
+		<line class="st1" x1="212.3" y1="92.9" x2="218.8" y2="92.9"/>
+		<line id="Line_154" class="st2" x1="255.9" y1="123.7" x2="255.9" y2="97.4"/>
+		<path id="Path_3482" class="st2" d="M217.2,128.6c4-6.7,11.3-11.8,19-11.8c10.9,0,19.7,8.8,19.7,19.7c0,3.2-0.8,6.3-2.2,9.1
+			l-1.5,2.6c-3.5,4.8-9.1,7.6-15,7.6H236c-10.3,0-18.7-8.4-18.7-18.7V99.4h-3.7V137c0,12.4,10.1,22.4,22.5,22.5h1.2
+			c12.3-0.1,22.3-10.1,22.2-22.4l0,0v-1.3c0-12.8-10.4-23.2-23.2-23.2l0,0c-3.8,0-7.4,0.9-10.8,2.7c-3,1.7-5.8,3.8-8.2,6.2"/>
+		<path id="Path_3632" class="st2" d="M259.6,97.4l-0.2,37.2"/>
+		<line id="Line_165" class="st1" x1="262.1" y1="84.5" x2="262.1" y2="56.8"/>
+		<line id="Line_152" class="st1" x1="257" y1="88.7" x2="260.7" y2="88.7"/>
+		<line id="Line_153" class="st1" x1="255.2" y1="92.8" x2="258.8" y2="92.8"/>
+		<rect id="Rectangle_1335" x="254.9" y="56.1" class="st2" width="17.7" height="29"/>
+		<g id="Group_2584" transform="translate(14.027 5.259)">
+			<rect id="Rectangle_1336" x="258.6" y="64" class="st2" width="9.7" height="3.4"/>
+		</g>
+		<path id="Rectangle_1338" class="st2" d="M254.9,85.2h5.7v11.1c0,1.1-0.9,2-2,2h-1.8c-1.1,0-2-0.9-2-2l0,0L254.9,85.2L254.9,85.2z
+			"/>
+	</g>
+	<g id="Power_pin_00000182520546652921656740000011486172529735364537_" transform="translate(1195.83 -154.512)">
+		<g id="Group_2627_00000003070494266873062980000017509031675023474861_" transform="translate(7) rotate(90)">
+			
+				<rect id="Rectangle_1332_00000022535459647081639140000008202603815120392887_" x="229.3" y="983.1" transform="matrix(2.535182e-06 1 -1 2.535182e-06 1218.5568 756.0588)" class="st2" width="3.8" height="8.4"/>
+			<path id="Path_3661_00000057122521313670480430000007241635200956048011_" class="st2" d="M247.9,990.6"/>
+			
+				<rect id="Rectangle_1334_00000112591760486119290930000000036778038733187230_" x="250.1" y="985.9" transform="matrix(2.535182e-06 1 -1 2.535182e-06 1239.4066 735.1816)" class="st2" width="4" height="2.7"/>
+			<path id="Path_3481_00000078734594376525569510000014755475318299525549_" class="st2" d="M250.8,984.1v6.6l-8.6,1.1h-6.7V983
+				h6.7L250.8,984.1z"/>
+		</g>
+	</g>
+	<g id="Rectangle_Copy_29_00000157995044943146261160000010304737302123883908_" transform="translate(147.037 111.782)">
+		<path class="st1" d="M25.7,10.3h3.6c0.2,0,0.3,0.2,0.3,0.3V17c0,0.2-0.2,0.3-0.3,0.3h-3.6"/>
+	</g>
+	<g>
+		<g id="Rectangle_Copy_16" transform="translate(0 0)">
+			<path class="st2" d="M73.9,44.4h92c3.6,0,6.5,2.9,6.5,6.5v102.2c0,3.6-2.9,6.5-6.5,6.5h-92c-3.6,0-6.5-2.9-6.5-6.5V50.9
+				C67.4,47.3,70.3,44.4,73.9,44.4z"/>
+		</g>
+		<g id="Rectangle_Copy_31-2" transform="translate(17.197 17.198)">
+			<path class="st1" d="M66.1,39.3h74.3c2.1,0,3.8,1.7,3.8,3.8v84.4c0,2.1-1.7,3.8-3.8,3.8H66.1c-2.1,0-3.8-1.7-3.8-3.8V43.1
+				C62.3,41,64,39.3,66.1,39.3z"/>
+		</g>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SavePayToAccountTableViewCell" id="KGk-i7-Jjw" customClass="SavePayToAccountTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yjl-os-dpW">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="35"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7BA-ez-MmL">
+                                <rect key="frame" x="0.0" y="5" width="24" height="24"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="saveACHNickname"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="qUK-t0-RPj"/>
+                                    <constraint firstAttribute="height" constant="24" id="qZM-Tv-rNi"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=" " image="selected-check"/>
+                                <state key="disabled" image="unselected-check">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save payment method to my account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ccs-z4-FT3">
+                                <rect key="frame" x="32" y="8" width="303" height="21"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7BA-ez-MmL" firstAttribute="leading" secondItem="yjl-os-dpW" secondAttribute="leading" id="Jsh-jE-U61"/>
+                            <constraint firstItem="ccs-z4-FT3" firstAttribute="top" secondItem="yjl-os-dpW" secondAttribute="top" constant="8" id="Srr-KX-zVK"/>
+                            <constraint firstItem="ccs-z4-FT3" firstAttribute="leading" secondItem="7BA-ez-MmL" secondAttribute="trailing" constant="8" id="Xii-mw-NfF"/>
+                            <constraint firstAttribute="trailing" secondItem="ccs-z4-FT3" secondAttribute="trailing" id="eYK-Sf-Xiy"/>
+                            <constraint firstItem="7BA-ez-MmL" firstAttribute="top" secondItem="yjl-os-dpW" secondAttribute="top" constant="5" id="lCM-1q-fRb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="yjl-os-dpW" secondAttribute="bottom" id="Hg3-H5-lID"/>
+                    <constraint firstItem="yjl-os-dpW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="T5K-wE-Te7"/>
+                    <constraint firstAttribute="trailing" secondItem="yjl-os-dpW" secondAttribute="trailing" id="mJE-rv-8mi"/>
+                    <constraint firstItem="yjl-os-dpW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="w4D-KR-Vh3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnSavePayChckBox" destination="7BA-ez-MmL" id="wc0-yK-FUd"/>
+                <outlet property="lblSavePay" destination="ccs-z4-FT3" id="L4Y-tV-IDQ"/>
+                <outlet property="savePayAccView" destination="yjl-os-dpW" id="vgF-nS-Nqn"/>
+            </connections>
+            <point key="canvasLocation" x="70.992366412213741" y="17.253521126760564"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected-check" width="24" height="24"/>
+        <image name="unselected-check" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

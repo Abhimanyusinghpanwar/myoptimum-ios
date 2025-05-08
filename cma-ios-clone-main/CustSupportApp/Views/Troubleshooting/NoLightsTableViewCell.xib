@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NoLightsTableViewCell" id="KGk-i7-Jjw" customClass="NoLightsTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsP-QN-RhS">
+                        <rect key="frame" x="8" y="16" width="5" height="5"/>
+                        <color key="backgroundColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="5" id="6pm-hX-rNZ"/>
+                            <constraint firstAttribute="height" constant="5" id="oKA-IQ-uM9"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2.5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If your power outlet is controlled by a wall switch, make sure the switch is in the ON position." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrJ-5y-sFh">
+                        <rect key="frame" x="29" y="8" width="283" height="60"/>
+                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="20"/>
+                        <color key="textColor" name="softBlack"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LsP-QN-RhS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9mb-5B-jew"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="FrJ-5y-sFh" secondAttribute="bottom" constant="8" id="IhZ-L1-1Mu"/>
+                    <constraint firstItem="FrJ-5y-sFh" firstAttribute="leading" secondItem="LsP-QN-RhS" secondAttribute="trailing" constant="16" id="eFC-Wg-0MZ"/>
+                    <constraint firstItem="FrJ-5y-sFh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="p9Y-HQ-jpN"/>
+                    <constraint firstAttribute="trailing" secondItem="FrJ-5y-sFh" secondAttribute="trailing" constant="8" id="uw5-B0-ccM"/>
+                    <constraint firstItem="LsP-QN-RhS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="vKX-VF-iZx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="FrJ-5y-sFh" id="tMc-Nk-rEq"/>
+            </connections>
+            <point key="canvasLocation" x="84" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="softBlack">
+            <color red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

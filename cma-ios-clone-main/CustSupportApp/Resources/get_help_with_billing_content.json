@@ -1,0 +1,94 @@
+[
+    {
+    "id":"1",
+    "text" : "Why did my monthly bill change this month?",
+      "forScreen": "whyMyBillGoUp",
+    "screenTitle" : "Several factors can contribute to an increase in your bill:",
+    "screenSubTitle": "To better understand the specific reasons for the increase in your bill this month, we recommend reviewing your bill statement, which provides a detailed breakdown of charges.",
+      "data" : [
+      {
+        "startContentWithBold": "Promotion Expiration: ",
+        "content": "If you were previously benefiting from a promotional rate or discount that has expired, your bill may have returned your standard rate.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "Added Services or Equipment: ",
+        "content": "If you added new services, upgraded your plan or obtained new Internet or TV equipment, this may result in an increase in your monthly charges.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "One Time Charges: ",
+        "content": "Occasionally, you may see one-time charges on your bill for services, equipment installations or special requests.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "Taxes and Fees: ",
+        "content": "Taxes and regulatory fees imposed by government authorities can fluctuate, affecting the total amount on your bill.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "Billing Cycle Changes: ",
+        "content": "If there were changes to your billing cycle, such as the addition of partial charges for services outside your regular billing period, it could temporarily increase your bill.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      }
+    ]
+  },
+  {
+    "id":"2",
+    "text" : "How can I lower my bill?",
+    "forScreen": "lowerMyBill",
+    "screenTitle" : "We understand that managing expenses is important, and there are several ways you can explore to potentially lower your bill:",
+    "screenSubTitle": "",
+    "data": [
+      {
+        "startContentWithBold": "Automatic Payments and Paperless Billing: ",
+        "content": "Enroll in Auto Pay and Paperless Billing to receive additional discounts.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "Bundle Services: ",
+        "content": "When you sign up for both Internet and Mobile service, you can save big on your bill.",
+        "hyperLinkText": "",
+        "hyperLinkURL": "",
+        "isImage": false,
+        "isBullet": true
+      },
+      {
+        "startContentWithBold": "Sign up for the Affordable Connectivity Program (ACP): ",
+        "content": " the ACP is a Federal Government benefit program that provides eligible households with a discount on their Internet service. To learn more about the ACP, visit ",
+        "hyperLinkText": "Optimum ACP ",
+        "hyperLinkURL": "https://www.optimum.com/acp",
+        "isImage": true,
+        "isBullet": true
+      }
+    ]
+  },
+  {
+    "id":"3",
+    "text" : "I'm having trouble making a payment online",
+    "forScreen": "trouble",
+    "screenTitle" : "Our chat agents are available 24 hours a day to help you make a payment.",
+    "screenSubTitle": "",
+    "data": [
+    ]
+  }
+]
+

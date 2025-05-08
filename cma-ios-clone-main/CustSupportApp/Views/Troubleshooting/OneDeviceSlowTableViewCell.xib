@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Regular_Bold.ttf">
+            <string>Regular-Bold</string>
+        </array>
+        <array key="Regular_Regular.ttf">
+            <string>Regular-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OneDeviceSlowCell" id="KGk-i7-Jjw" customClass="OneDeviceSlowTableViewCell" customModule="CustSupportApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DO5-5Q-te7">
+                        <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-6s-dvS">
+                                <rect key="frame" x="8.6666666666666661" y="5" width="8.9999999999999982" height="16"/>
+                                <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="16"/>
+                                <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59607843137254901" green="0.58823529411764708" blue="0.58823529411764708" alpha="0.29608507977416182" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="N8F-Mq-59y"/>
+                            <constraint firstItem="GLb-6s-dvS" firstAttribute="centerX" secondItem="DO5-5Q-te7" secondAttribute="centerX" id="aGK-ac-qVT"/>
+                            <constraint firstItem="GLb-6s-dvS" firstAttribute="centerY" secondItem="DO5-5Q-te7" secondAttribute="centerY" id="qbz-l5-Muf"/>
+                            <constraint firstAttribute="width" constant="26" id="tiq-Eh-KQe"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="13"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure your device is in range of your network and connected with the correct password:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qEV-NH-2XW" customClass="TTTAttributedLabel">
+                        <rect key="frame" x="45" y="5" width="255" height="54"/>
+                        <fontDescription key="fontDescription" name="Regular-Regular" family="Regular" pointSize="18"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi Username" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWd-xV-mtW">
+                        <rect key="frame" x="45" y="107" width="255" height="18"/>
+                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                        <color key="textColor" red="0.098039215686274508" green="0.098039215686274508" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wifi password" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V91-lp-tcR">
+                        <rect key="frame" x="45" y="145" width="255" height="18"/>
+                        <fontDescription key="fontDescription" name="Regular-Bold" family="Regular" pointSize="18"/>
+                        <color key="textColor" red="0.098039215690000001" green="0.098039215690000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="DO5-5Q-te7" secondAttribute="bottom" id="1L0-IA-RUi"/>
+                    <constraint firstItem="V91-lp-tcR" firstAttribute="trailing" secondItem="NWd-xV-mtW" secondAttribute="trailing" id="IzY-v2-3Bp"/>
+                    <constraint firstItem="DO5-5Q-te7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Kw8-jJ-AhS"/>
+                    <constraint firstItem="V91-lp-tcR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NWd-xV-mtW" secondAttribute="bottom" priority="999" constant="20" id="LCj-UX-aWr"/>
+                    <constraint firstItem="qEV-NH-2XW" firstAttribute="leading" secondItem="DO5-5Q-te7" secondAttribute="trailing" constant="10" id="LgW-fI-fzn"/>
+                    <constraint firstItem="NWd-xV-mtW" firstAttribute="leading" secondItem="qEV-NH-2XW" secondAttribute="leading" id="Mxu-OX-gZg"/>
+                    <constraint firstAttribute="trailing" secondItem="qEV-NH-2XW" secondAttribute="trailing" id="UC7-Ic-MFR"/>
+                    <constraint firstItem="qEV-NH-2XW" firstAttribute="top" secondItem="DO5-5Q-te7" secondAttribute="top" constant="2" id="UpN-lk-XNt"/>
+                    <constraint firstItem="NWd-xV-mtW" firstAttribute="trailing" secondItem="qEV-NH-2XW" secondAttribute="trailing" id="bmN-jb-bPb"/>
+                    <constraint firstItem="NWd-xV-mtW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="qEV-NH-2XW" secondAttribute="bottom" priority="999" constant="20" id="eoB-mo-MFh"/>
+                    <constraint firstItem="DO5-5Q-te7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="feJ-Gt-uU3"/>
+                    <constraint firstAttribute="bottom" secondItem="NWd-xV-mtW" secondAttribute="bottom" priority="999" constant="20" id="fsr-VU-asd"/>
+                    <constraint firstItem="V91-lp-tcR" firstAttribute="leading" secondItem="NWd-xV-mtW" secondAttribute="leading" id="hKu-sx-Xjt"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="GLb-6s-dvS" secondAttribute="bottom" id="jxT-VL-MWJ"/>
+                    <constraint firstAttribute="bottom" secondItem="qEV-NH-2XW" secondAttribute="bottom" priority="250" constant="10" id="kEH-1H-Wkz"/>
+                    <constraint firstAttribute="bottom" secondItem="V91-lp-tcR" secondAttribute="bottom" priority="250" constant="30" id="sVa-Z6-uzh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="networkLabelBottomConstraintToSuperView" destination="kEH-1H-Wkz" id="u4W-0f-RnI"/>
+                <outlet property="networkLabelBottomConstraintToUsername" destination="eoB-mo-MFh" id="l4C-rL-otb"/>
+                <outlet property="numberLabel" destination="GLb-6s-dvS" id="y3H-N4-LiO"/>
+                <outlet property="passwordLabel" destination="V91-lp-tcR" id="uJv-ki-Ntv"/>
+                <outlet property="passwordLabelBottomConstraintToSuperview" destination="sVa-Z6-uzh" id="DYh-JD-xV4"/>
+                <outlet property="rangeOfNetworkLabel" destination="qEV-NH-2XW" id="dL3-0F-7rF"/>
+                <outlet property="usernameLabel" destination="NWd-xV-mtW" id="xCa-9p-HY5"/>
+                <outlet property="usernameLabelBottomConstraintToPassword" destination="LCj-UX-aWr" id="YKa-eu-4P9"/>
+                <outlet property="usernameLabelBottomConstraintToSuperview" destination="fsr-VU-asd" id="PEC-YV-JhB"/>
+            </connections>
+            <point key="canvasLocation" x="-47.328244274809158" y="19.366197183098592"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="qEV-NH-2XW">
+            <size key="intrinsicContentSize" width="678" height="18"/>
+        </designable>
+    </designables>
+</document>
