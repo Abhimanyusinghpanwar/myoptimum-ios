@@ -12,24 +12,25 @@ jobs:
     runs-on: macos-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout repository
       uses: actions/checkout@v3
 
     - name: Build the app
       run: |
         xcodebuild clean build \
-          -project CustSupportApp.xcodeproj \  # 👈 Make sure this matches your project file
-          -scheme CustSupportApp \            # 👈 Match the exact scheme name
+          -project CustSupportApp.xcodeproj \
+          -scheme CustSupportApp \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
+          -destination 'platform=iOS Simulator,name=iPhone 14' \
           CODE_SIGNING_ALLOWED=NO
 
-    - name: Run tests
+    - name: Run unit tests
       run: |
         xcodebuild test \
           -project CustSupportApp.xcodeproj \
           -scheme CustSupportApp \
           -sdk iphonesimulator \
-          -destination 'platform=iOS Simulator,name=iPhone 14,OS=latest' \
+          -destination 'platform=iOS Simulator,name=iPhone 14' \
           CODE_SIGNING_ALLOWED=NO
+
 
